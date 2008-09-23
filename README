@@ -1,0 +1,15 @@
+Script to extract data from an Apple WikiServer's data store by querying the
+filesystem itself. Creates a 'wikipages.csv' file that's readable by any
+spreadsheeting application, such as Numbers.app or Microsoft Excel.app.
+
+USAGE:   To use this script, change to the WikiServer's pages directory, then
+         just run this script. A file named wikipages.csv will be created in
+         your current directory. For instance:
+
+             cd /Library/Collaboration/Groups/mygroup/wiki  # dir to work in
+             wikipages2csv.sh                               # run the script
+             cp wikipages.csv ~/Desktop                     # save output
+
+WARNING: Since the WikiServer's files are only accessible as root, this script
+         must be run as root to function. Additionally, this is not extremely
+         well tested, so use at your own risk.
